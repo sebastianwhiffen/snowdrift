@@ -1,13 +1,14 @@
 todays todo:
 
 
-create main event loop
+create main event loop - :tick:
 
-build with cmake - see how the main event loop is used in ioq3, pretty sure its a common loop used in both server and client.
+build with nob - see how the main event loop is used in ioq3, pretty sure its a common loop used in both server and client.
 and both server and client are dlls? so build a dll with an event loop
+	- how does io3 differenciate between a server and a client build?
+	- how does each server and client acutally start <-
 
 implement SDL events into client event loop
-
 
 send events from queue to client 
 

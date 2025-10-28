@@ -1,0 +1,2 @@
+set(SRC_DIR ${CMAKE_SOURCE_DIR}/src)
+set(BIN_DIR ${CMAKE_SOURCE_DIR}/bin)
