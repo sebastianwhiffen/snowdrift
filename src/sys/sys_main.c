@@ -7,6 +7,8 @@ void hello() { printf("hello from event \n"); }
 
 int main() {
 
+	printf("hi");
+
     Com_Init();
 
     void (*fn)(void) = hello;

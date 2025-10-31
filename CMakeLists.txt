@@ -1,10 +1,15 @@
 cmake_minimum_required(VERSION 3.10)
+
 project(snowdrift C)
 
+option(BUILD_CLIENT "Build client" ON)
+
+# set some global dirs like build and src dir
 include(cmake/dirs.cmake)
 
-add_executable(snowdrift ${SRC_DIR}/sys/sys_main.c ${SRC_DIR}/common/common.c)
+include(cmake/platforms/all.cmake)
+include(cmake/libraries/all.cmake)
 
-set_target_properties(snowdrift PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY ${BIN_DIR}
-)
+
+include(cmake/client.cmake)
+# target_compile_definitions(snowdrift PRIVATE DEDICATED)

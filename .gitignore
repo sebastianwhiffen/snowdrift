@@ -1,6 +1,9 @@
 nob
 main
 
+# cmake
+.cache
+
 # Prerequisites
 *.d
 
